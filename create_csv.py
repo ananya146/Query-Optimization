@@ -2,7 +2,7 @@ import csv
 import random
 import time
 
-# Generate 100 SQL queries and their optimized versions
+# Generate SQL queries and their optimized versions
 queries_and_optimizations = [
     ("SELECT * FROM employees WHERE department = 'Sales';", "SELECT * FROM employees WHERE department = 'Sales' AND status = 'active';"),
     ("SELECT COUNT(*) FROM orders WHERE order_date > '2020-01-01';", "SELECT COUNT(1) FROM orders WHERE order_date > '2020-01-01';"),
@@ -58,15 +58,14 @@ queries_and_optimizations = [
 
 
 
-# Specify the file name
+# Specifying the file name
 csv_filename = 'sql_queries.csv'
 
-# Open the CSV file for writing
+# Opening the CSV file for writing
 with open(csv_filename, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file, quotechar='"', quoting=csv.QUOTE_ALL, escapechar='\\')
-    # Write the header
+    # Writing the header
     writer.writerow(['Original_Query', 'Optimized_Query'])
-    # Write each row of data
     for original_query, optimized_query in queries_and_optimizations:
         # Write queries ensuring they are properly enclosed in double quotes
         writer.writerow([original_query, f'"{optimized_query}"'])
