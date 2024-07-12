@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Ensure the body has a consistent look */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0f7fa 0%, #b9fbc0 100%); /* Gradient Background */
+    color: #333;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Subtle Texture */
+}
+
+/* Style for the main header */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #004d40; /* Dark Teal Color */
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Style for the query list container */
+#query-list-container {
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    max-width: 900px; /* Center align and limit the width */
+}
+
+/* Style for the query list title */
+#query-list-container h2 {
+    color: #00796b; /* Teal Color */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+/* Style for the query list items */
+#query-list li {
+    padding: 15px;
+    background: #f1f8e9; /* Light Green Background */
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#query-list li:hover {
+    background: #d0f4c4; /* Lighter Green Background */
+    transform: scale(1.02);
+}
+
+/* Style for the query details container */
+.query-details-container {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Style for the query details title */
+.query-details-container h2 {
+    color: #004d40; /* Dark Teal Color */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+/* Style for the performance metrics section */
+#performance-metrics {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e0f2f1; /* Light Teal Background */
+    border: 1px solid #b2dfdb;
+    border-radius: 10px;
+}
+
+/* Style for the performance metrics title */
+#performance-metrics h3 {
+    color: #004d40; /* Dark Teal Color */
+    margin-bottom: 10px;
+}
+
+/* Style for the explanation section */
+#explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f8e9; /* Very Light Green Background */
+    border: 1px solid #c5e1a5;
+    border-radius: 10px;
+}
+
+#explanation h3 {
+    color: #004d40; /* Dark Teal Color */
+    margin-bottom: 10px;
+}
+
+/* Style for the links */
+a {
+    color: #004d40; /* Dark Teal Color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the preformatted text */
+pre {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow-x: auto; /* Horizontal scroll for long queries */
+    white-space: pre-wrap;
+}
+
+/* Style for the strong text */
+strong {
+    color: #004d40; /* Dark Teal Color */
+}

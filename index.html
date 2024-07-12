@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Query Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>SQL Query Viewer</h1>
+    <div id="query-list-container">
+        <h2>SQL Queries</h2>
+        <ul id="query-list"></ul>
+    </div>
+    <div id="query-details-container" class="query-details-container" style="display:none;">
+        <h2>Query Details</h2>
+        <p><strong>Original Query:</strong></p>
+        <pre id="original-query"></pre>
+        <p><strong>Optimized Query:</strong></p>
+        <pre id="optimized-query"></pre>
+        <div id="performance-metrics">
+            <h3>Performance Metrics</h3>
+            <p><strong>Original Query Execution Time:</strong> <span id="original-time"></span></p>
+            <p><strong>Optimized Query Execution Time:</strong> <span id="optimized-time"></span></p>
+            <p><strong>Faster Query:</strong> <span id="faster-query"></span></p>
+        </div>
+        <div id="explanation">
+            <h3>Why is the Optimized Query Better?</h3>
+            <p id="explanation-text"></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
