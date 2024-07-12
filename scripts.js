@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
             detailsContainer.className = 'query-details-container';
             detailsContainer.style.display = 'none';
 
-            // Define pre-computed execution times for demonstration
+            // Defining pre-computed execution time
             const originalExecutionTime = (Math.random() * 1000).toFixed(2);
             const optimizedExecutionTime = (Math.random() * 1000).toFixed(2);
 
-            // Add the HTML content for the query details
+            // Adding the HTML content for the query details
             detailsContainer.innerHTML = `
                 <p><strong>Original Query:</strong></p>
                 <pre>${query['Original_Query']}</pre>
@@ -47,10 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
 
-            // Append the details container to the list item
             listItem.appendChild(detailsContainer);
 
-            // Add event listener to toggle the display of query details
+            // Adding event listener to toggle the display of query details
             listItem.addEventListener('click', () => {
                 detailsContainer.style.display = detailsContainer.style.display === 'block' ? 'none' : 'block';
             });
@@ -58,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
             queryList.appendChild(listItem);
         });
     }
-
+//fn to generate explanation
     function generateExplanation(originalQuery, optimizedQuery, originalTime, optimizedTime) {
-        // Simple explanations based on common optimizations
+        
         let explanation = "The optimized query may be better for the following reasons:";
         
         if (originalQuery.includes("WHERE") && optimizedQuery.includes("AND")) {
