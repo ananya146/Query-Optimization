@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Ensure the body has a consistent look */
+/* The body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -15,7 +15,7 @@ body {
 h1 {
     text-align: center;
     margin: 30px 0;
-    color: #004d40; /* Dark Teal Color */
+    color: #004d40; 
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
@@ -27,7 +27,7 @@ h1 {
     margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    max-width: 900px; /* Center align and limit the width */
+    max-width: 900px; 
 }
 
 /* Style for the query list title */
@@ -40,7 +40,7 @@ h1 {
 /* Style for the query list items */
 #query-list li {
     padding: 15px;
-    background: #f1f8e9; /* Light Green Background */
+    background: #f1f8e9;
     margin-bottom: 12px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -49,7 +49,7 @@ h1 {
 }
 
 #query-list li:hover {
-    background: #d0f4c4; /* Lighter Green Background */
+    background: #d0f4c4; 
     transform: scale(1.02);
 }
 
@@ -65,7 +65,7 @@ h1 {
 
 /* Style for the query details title */
 .query-details-container h2 {
-    color: #004d40; /* Dark Teal Color */
+    color: #004d40;
     margin-bottom: 15px;
     font-size: 1.8em;
 }
@@ -74,14 +74,14 @@ h1 {
 #performance-metrics {
     margin-top: 20px;
     padding: 15px;
-    background: #e0f2f1; /* Light Teal Background */
+    background: #e0f2f1;
     border: 1px solid #b2dfdb;
     border-radius: 10px;
 }
 
 /* Style for the performance metrics title */
 #performance-metrics h3 {
-    color: #004d40; /* Dark Teal Color */
+    color: #004d40; 
     margin-bottom: 10px;
 }
 
@@ -89,7 +89,7 @@ h1 {
 #explanation {
     margin-top: 20px;
     padding: 15px;
-    background: #f1f8e9; /* Very Light Green Background */
+    background: #f1f8e9;
     border: 1px solid #c5e1a5;
     border-radius: 10px;
 }
@@ -115,11 +115,11 @@ pre {
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
-    overflow-x: auto; /* Horizontal scroll for long queries */
+    overflow-x: auto; 
     white-space: pre-wrap;
 }
 
 /* Style for the strong text */
 strong {
-    color: #004d40; /* Dark Teal Color */
+    color: #004d40;
 }
